@@ -71,5 +71,17 @@
             <td>3 hours</td>
         </tr> 
       </table>
+      <hr>
+      <h3>Code display</h3>
+      <blockquote cite=“https://stackoverflow.com/questions/6219454/efficient-way-to-remove-all-whitespace-from-string ”> Strip Whitespace From String
+      </blockquote >
+
+        <pre>
+          if (!String.prototype.trim) {
+            String.prototype.trim = function () {
+              return this.replace(/^\s+|\s+$/g, '');
+            };
+          }
+      </pre>
   </body>
 </html>
